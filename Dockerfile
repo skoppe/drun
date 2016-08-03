@@ -3,7 +3,7 @@ FROM greyltc/archlinux
 MAINTAINER Sebastiaan Koppe <mail@skoppe.eu>
 
 RUN pacman --noconfirm -Sy --force libevent && \
-	# Clean up to make this as small as possible
+    # Clean up to make this as small as possible
     # Remove info, man and docs
     rm -r /usr/share/info/* && \
     rm -r /usr/share/man/* && \

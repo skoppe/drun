@@ -6,7 +6,6 @@ RUN pacman --noconfirm -Sy --force libevent && \
     # Clean up to make this as small as possible
     # Remove info, man and docs
     rm -r /usr/share/info/* && \
-    rm -r /usr/share/man/* && \
 
     # Delete any backup files like /etc/pacman.d/gnupg/pubring.gpg~
     find /. -name "*~" -type f -delete && \
